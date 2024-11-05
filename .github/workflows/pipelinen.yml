@@ -58,12 +58,6 @@ jobs:
     - name: Build and analyze
       env:
         GITHUB TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-
-
-  
-    - name: Build and analyze
-      env:
-        GITHUB TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
         SONAR TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectkey=POSTECH_SOAT_DevOps_Desafio_Disciplina
 
