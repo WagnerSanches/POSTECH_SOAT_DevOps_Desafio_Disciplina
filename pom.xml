@@ -17,6 +17,7 @@
 		<java.version>17</java.version>
 		<sonar.organization>wagnersanches</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<maven.compiler.release>17</maven.compiler.release>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -42,6 +43,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.1.5</version>
+				<configuration>
+					<release>17</release>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
